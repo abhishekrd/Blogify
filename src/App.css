@@ -1,38 +1,197 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(10, 76, 217);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CreateBlog-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(240, 240, 240);
+
+}
+.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(240, 240, 240);
+
+}
+.login-btn:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(212, 212, 212);
+}
+
+.logout-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(183, 0, 0);
+  color: white;
+  border-radius: 0.25rem;
+}
+.logout-btn:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(176, 0, 0);
+  color: white;
+  border-radius: 0.25rem;
+}
+.loginpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+input{
+  width: 25rem;
+  padding: 1rem 4rem 1rem 1rem;
+  border: 0.1rem solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 0.25rem;
+}
+input:active{
+  outline: none;
+  border: 0.1rem solid rgb(34, 141, 255);
+}
+input:focus{
+  outline: none;
+  border: 0.1rem solid rgb(34, 141, 255);
+
+}
+::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+
+}
+
+textarea{
+  width: 25rem;
+  padding: 1rem 4rem 10rem 1rem;
+  border: 0.1rem solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 0.25rem;
+}
+textarea:active{
+  outline: none;
+  border: 0.1rem solid rgb(34, 141, 255);
+}
+textarea:focus{
+  outline: none;
+  border: 0.1rem solid rgb(34, 141, 255);
+
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin: 15px auto;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #006aff;
+  color: #ecf0f1;
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #005ed1;
+
+}
+
+.btn > * {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1rem;
+
+}
+
+.btn span {
+  display: block;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, .3);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
 }
