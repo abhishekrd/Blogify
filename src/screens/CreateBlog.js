@@ -19,9 +19,8 @@ const CreateBlog = ( { authenticated } ) => {
     }
  
     useEffect(() => {
-
-      const token = localStorage.getItem("authenticated")
-       if(token != true){
+      
+       if(!authenticated){
         navigate("/login")
        }
     },[])
