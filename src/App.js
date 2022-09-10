@@ -23,11 +23,13 @@ function App() {
   return (
      <Router>
       <nav>
-        <Link to="/">Home</Link>
+        
         
         {!authenticated
          ? <Link to="/login">Login</Link> 
-        :<><Link to="/CreateBlog">CreateBlog</Link> 
+        :<>
+        <Link to="/">Home</Link>
+        <Link to="/CreateBlog">CreateBlog</Link> 
         <button onClick={logout} className='logout-btn'>Logout</button></> }  
       </nav>
       <Routes>
