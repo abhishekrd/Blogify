@@ -72,24 +72,29 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  font-size: 1.2rem;
+  padding: 0.4rem 1.8rem 0.4rem 1.8rem;
+  font-size: 1rem;
   border: none;
   background: rgb(183, 0, 0);
   color: white;
   border-radius: 0.25rem;
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }
 .logout-btn:hover{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  font-size: 1.2rem;
+  padding: 0.4rem 1.8rem 0.4rem 1.8rem;
+  font-size: 1rem;
   border: none;
-  background: rgb(176, 0, 0);
+  background: rgb(117, 0, 0);
   color: white;
   border-radius: 0.25rem;
+  transition: all 0.5s;
 }
 .loginpage{
   display: flex;
@@ -105,6 +110,7 @@ input{
   border: 0.1rem solid aliceblue;
   background-color: aliceblue;
   border-radius: 0.25rem;
+  font-size: 1.1rem;
 }
 input:active{
   outline: none;
@@ -127,6 +133,8 @@ textarea{
   border: 0.1rem solid aliceblue;
   background-color: aliceblue;
   border-radius: 0.25rem;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.1rem;
 }
 textarea:active{
   outline: none;
@@ -237,10 +245,10 @@ textarea:focus{
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid rgb(0, 81, 255);
+  border: 8px solid #0B4DD9;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: rgb(0, 60, 255) transparent transparent transparent;
+  border-color: #0B4DD9 transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;

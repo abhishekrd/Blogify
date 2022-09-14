@@ -30,10 +30,10 @@ function App() {
         :<>
         <Link to="/">Home</Link>
         <Link to="/CreateBlog">CreateBlog</Link> 
-        <button onClick={logout} className='logout-btn'>Logout</button></> }  
+        <button onClick={logout} className='logout-btn'>LOGOUT</button></> }  
       </nav>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home authenticated={authenticated} />}></Route>
         <Route path='/CreateBlog' element={<CreateBlog authenticated={authenticated} />}></Route>
        <Route path='/login' element={<Login setAuthenticated={setAuthenticated} />}></Route>
         
