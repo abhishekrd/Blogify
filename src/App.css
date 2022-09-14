@@ -4,7 +4,7 @@
 body {
   padding: 0%;
   margin: 0%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -26,7 +26,7 @@ a {
   font-size: 20px;
 }
 
-.CreateBlog-div{
+.CreateBlog-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ a {
   gap: 1rem;
 }
 
-.login-btn{
+.login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +43,8 @@ a {
   font-size: 1.2rem;
   border: none;
   background: rgb(240, 240, 240);
-
 }
-.login-btn{
+.login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,9 +53,8 @@ a {
   font-size: 1.2rem;
   border: none;
   background: rgb(240, 240, 240);
-
 }
-.login-btn:hover{
+.login-btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +65,7 @@ a {
   background: rgb(212, 212, 212);
 }
 
-.logout-btn{
+.logout-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,11 +77,11 @@ a {
   color: white;
   border-radius: 0.25rem;
   margin: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
-.logout-btn:hover{
+.logout-btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +94,7 @@ a {
   border-radius: 0.25rem;
   transition: all 0.5s;
 }
-.loginpage{
+.loginpage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +102,7 @@ a {
   height: 90vh;
 }
 
-input{
+input {
   width: 25rem;
   padding: 1rem 4rem 1rem 1rem;
   border: 0.1rem solid aliceblue;
@@ -112,38 +110,35 @@ input{
   border-radius: 0.25rem;
   font-size: 1.1rem;
 }
-input:active{
+input:active {
   outline: none;
   border: 0.1rem solid rgb(34, 141, 255);
 }
-input:focus{
+input:focus {
   outline: none;
   border: 0.1rem solid rgb(34, 141, 255);
-
 }
-::placeholder{
-  font-family: 'Roboto', sans-serif;
+::placeholder {
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-
 }
 
-textarea{
+textarea {
   width: 25rem;
   padding: 1rem 4rem 10rem 1rem;
   border: 0.1rem solid aliceblue;
   background-color: aliceblue;
   border-radius: 0.25rem;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
 }
-textarea:active{
+textarea:active {
   outline: none;
   border: 0.1rem solid rgb(34, 141, 255);
 }
-textarea:focus{
+textarea:focus {
   outline: none;
   border: 0.1rem solid rgb(34, 141, 255);
-
 }
 
 .btn {
@@ -155,28 +150,26 @@ textarea:focus{
   border-width: 0;
   outline: none;
   border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   background-color: #006aff;
   color: #ecf0f1;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #005ed1;
-
 }
 
 .btn > * {
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
-
 }
 
 .btn span {
   display: block;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-
 }
 
 .btn:before {
@@ -188,22 +181,24 @@ textarea:focus{
   width: 0;
   padding-top: 0;
   border-radius: 100%;
-  background-color: rgba(236, 240, 241, .3);
+  background-color: rgba(236, 240, 241, 0.3);
   transform: translate(-50%, -50%);
 }
 
 .btn:active:before {
   width: 120%;
   padding-top: 120%;
-  
-  transition: width .2s ease-out, padding-top .2s ease-out;
+
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-.card-div{
+.card-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +207,7 @@ textarea:focus{
   padding-top: 3rem;
   background-color: #e3efff;
 }
-.card{
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,13 +217,11 @@ textarea:focus{
   background: white;
   box-shadow: 10px 10px 65px -22px rgb(167, 192, 255);
 }
-.title{
+.title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bolder;
 }
-
-
 
 .lds-ring {
   display: flex;
@@ -245,10 +238,10 @@ textarea:focus{
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid #0B4DD9;
+  border: 8px solid #0b4dd9;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #0B4DD9 transparent transparent transparent;
+  border-color: #0b4dd9 transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
