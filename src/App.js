@@ -22,6 +22,7 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
+      
       setAuthenticated(user ? true : false);
     });
   }, []);
